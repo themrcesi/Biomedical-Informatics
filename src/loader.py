@@ -57,6 +57,7 @@ def load_queries(queries_path):
 def load_corpus_parallel(corpus_path):
     """
     Main function to load the documents.
+    IMPORTANT: change the n_jobs depending on your cpu
 
     Parameters
     ----------
