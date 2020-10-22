@@ -27,7 +27,7 @@ def preprocess_document(doc, stopset):
     text = np.array([paragraph["text"] for paragraph in doc["body_text"]], dtype=str)
     information = np.concatenate((title, abstract, text))
     tokens = np.concatenate((np.array([wordpunct_tokenize(inf) for inf in information], dtype='object')))
-    clean = [token.lower() for token in np.unique(tokens) if token.lower() not in stopset and len(token) > 2]
+    clean = [token.lower() for token in tokens if token.lower() not in stopset and len(token) > 2]
     final = np.array([stemmer.stem(word) for word in clean])
     return {"title": title[0], "stems": final}
 
