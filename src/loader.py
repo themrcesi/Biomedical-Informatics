@@ -6,6 +6,13 @@ from nltk.corpus import stopwords
 from nltk.tokenize import wordpunct_tokenize
 from nltk.stem import PorterStemmer
 from joblib import Parallel, delayed
+import dask
+import dask.array as da
+from gensim import corpora
+from gensim import models
+import pandas as pd
+from gensim import similarities
+
 
 def preprocess_document(doc, stopset):
     """
@@ -21,15 +28,22 @@ def preprocess_document(doc, stopset):
     dict : dictionary having title and stems
 
     """
-    stemmer = PorterStemmer()
     title = np.array([doc["metadata"]["title"]], dtype=str)
     abstract = np.array([paragraph["text"] for paragraph in doc["abstract"]], dtype=str)
     text = np.array([paragraph["text"] for paragraph in doc["body_text"]], dtype=str)
+    stemmer = PorterStemmer()
     information = np.concatenate((title, abstract, text))
-    tokens = np.concatenate((np.array([wordpunct_tokenize(inf) for inf in information], dtype='object')))
+    tokens = np.concatenate(([wordpunct_tokenize(inf) for inf in information]))
     clean = [token.lower() for token in tokens if token.lower() not in stopset and len(token) > 2]
-    final = np.array([stemmer.stem(word) for word in clean])
+    final = [stemmer.stem(word) for word in clean]
     return {"title": title[0], "stems": final}
+
+def preprocess_query(query, stopset):
+    stemmer = PorterStemmer()
+    tokens = wordpunct_tokenize(query)
+    clean = [token.lower() for token in tokens if token.lower() not in stopset and len(token) > 2]
+    stems = [stemmer.stem(word) for word in clean]
+    return stems
 
 def load_queries(queries_path):
     """
@@ -52,52 +66,91 @@ def load_queries(queries_path):
     for query in data_dict["topics"]["topic"]:
         dic_queries[query["@number"]] = query["query"]
 
-    return dic_queries
+    df = pd.DataFrame.from_dict(dic_queries, orient='index', columns=['query'])
 
-def load_corpus_parallel(corpus_path):
-    """
-    Main function to load the documents.
-    IMPORTANT: change the n_jobs depending on your cpu
+    return df
 
-    Parameters
-    ----------
-    corpus_path : path of the corpus directory
-
-    Returns
-    -------
-    dic_files : dictionary having a unique entry {paper_id: {title: x, stems: [y,z,w...]}, ...} for each document
-
-    """
-    directory = os.fsencode(corpus_path)
+def load_corpus_parallel(path_corpus):
+    directory = os.fsencode(path_corpus)
     stopset = set(stopwords.words("english"))
-    docs = np.array(Parallel(n_jobs=16)(delayed(load_document)(corpus_path, file, stopset) for file in os.listdir(directory)))
-    dic_files = {}
-    for doc in docs:
-        dic_files[doc[0]] = doc[1]
-    return dic_files
+    dic = corpora.Dictionary()
+    titles_dic = {}
+    def load_single_document(file, stopset):
+        filename = os.fsdecode(file)
+        with open("\\".join([path_corpus, filename])) as file:
+            file_json = json.load(file)
+        pre_doc = preprocess_document(file_json, stopset)
+        titles_dic[file_json["paper_id"]] = pre_doc["title"]
+        dic.add_documents([pre_doc["stems"]])
+    Parallel(n_jobs=16, backend="threading")(delayed(load_single_document)(file, stopset) for file in os.listdir(directory))   
+    return titles_dic, dic
 
-def load_document(directory_path, file, stopset):
-    """
-    Specific function to load a single document
+def load_corpus_single(path_corpus):
+    directory = os.fsencode(path_corpus)
+    stopset = set(stopwords.words("english"))
+    dic = corpora.Dictionary()
+    titles_dic = {}
+    counter = 1        
+    for file in os.listdir(directory):
+        print(counter)
+        counter += 1
+        filename = os.fsdecode(file)
+        with open("\\".join([path_corpus, filename])) as file:
+            file_json = json.load(file)
+        pre_doc = preprocess_document(file_json, stopset)
+        titles_dic[file_json["paper_id"]] = pre_doc["title"]
+        dic.add_documents([pre_doc["stems"]])
+        
+    df_titles = pd.DataFrame.from_dict(titles_dic, orient = 'index', columns=['title'])
+        
+    return titles_dic, dic
 
-    Parameters
-    ----------
-    directory_path : path of the corpus directory
-    file : file to be read
-    stopset : stopset for english
+def doc2bows_parallel(path_corpus, dictionary):
+    directory = os.fsencode(path_corpus)
+    stopset = set(stopwords.words("english"))
+    vectors = []
+    def doc2bow_single_document(file):
+        filename = os.fsdecode(file)
+        with open("\\".join([path_corpus, filename])) as file:
+            file_json = json.load(file)
+        pre_doc = preprocess_document(file_json, stopset)
+        vectors.append(dictionary.doc2bow(pre_doc["stems"]))
+    Parallel(n_jobs=16, backend="threading", verbose=100)(delayed(doc2bow_single_document)(file) for file in os.listdir(directory))   
+    corpora.MmCorpus.serialize("B:/Proyectos/InformationRetrievalSystem/vsx_docs.mm", vectors)
+    return vectors
 
-    Returns
-    -------
-    returned : an array having [paper_id, {title: xxxxx, stems: [x,y,z,....]}]
+def doc2bows_single(path_corpus, dictionary):
+    directory = os.fsencode(path_corpus)
+    stopset = set(stopwords.words("english"))
+    vectors = []
+    counter = 1
+    for file in os.listdir(directory):
+        print(counter)
+        counter += 1
+        filename = os.fsdecode(file)
+        with open("\\".join([path_corpus, filename])) as file:
+            file_json = json.load(file)
+        pre_doc = preprocess_document(file_json, stopset)
+        vectors.append(dictionary.doc2bow(pre_doc["stems"]))
+        
+    corpora.MmCorpus.serialize("B:/Proyectos/InformationRetrievalSystem/vsx_docs.mm", vectors)
+    return vectors
 
-    """
-    filename = os.fsdecode(file)
-    with open("\\".join([directory_path, filename])) as file:
-        file_json = json.load(file)
-        returned = np.array([file_json["paper_id"], preprocess_document(file_json, stopset)])
-    file.close()
-    return returned
-      
+def load_judgements(path_judgements):
+    judgements = pd.read_csv(path_judgements, delimiter=' ', names = ["query", "document", "score"], usecols=[0,2,3])
+    return judgements
 
+def create_TF_IDF_model(path_corpus):
+    titles_dic, dictionary = load_corpus_single(path_corpus)
+    bow = doc2bows_single(path_corpus, dictionary)
+    tfidf = models.TfidfModel(bow)
+    return tfidf, dictionary, bow, titles_dic
 
-
+def launch_query(model, dictionary, bow, query, titles):
+    stopset = set(stopwords.words("english"))
+    index = similarities.MatrixSimilarity(bow, num_features=len(dictionary))
+    pq = preprocess_query(query, stopset)
+    vq = dictionary.doc2bow(pq)
+    qtfidf = model[vq]
+    sim = index[qtfidf]
+    print(sim)
