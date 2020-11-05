@@ -18,5 +18,5 @@ def load_dataset(pathDataset):
     
     relevants = np.array([csv.loc[csv["query"]==query]["isRelevant"] for query in queries])
     
-    queries = [computeRF(query) for query in queries]
+    queriesRF = [computeRF(query) for query in queries]
     return queries, queriesRF , csv["term"], relevants
