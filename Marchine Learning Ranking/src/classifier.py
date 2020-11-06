@@ -71,8 +71,8 @@ def create_model(model_path):
     file1 = open(model_path, 'r') 
     documents = pd.Series(file1.readlines(), name="document").str.lower()
     queriesRF = [{"glucose":1/2, "blood":1/2}, {"bilirubin":1/2, "plasma":1/2}, {"white":1/4, "blood":1/4, "cells":1/4, "count":1/4}]
-    queries = ["glucose blood", "bilirubin plasma"]
-    isRelevants = [pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant')]
+    queries = ["glucose blood", "bilirubin plasma", "white blood cell counts"]
+    isRelevants = [pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant')]
     
     clf = LogisticRegression()
     logors = []
