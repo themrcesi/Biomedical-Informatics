@@ -1,6 +1,6 @@
 import argparse
 
-from classifier import create_model, predict
+from classifier import create_model, predict, loadModel, saveModel
 from dataset import load_dataset
 import pandas as pd
 import time 
@@ -26,13 +26,19 @@ if __name__ == "__main__":
        
     queries = args.queries
     dataset_path = args.dataset
-    model = args.model
+    path_load = args.model
         
-    if model == "":
+    if path_load == "":
         model, logor = create_model(dataset_path)
         print("Model created...")
+        # Ask the user to save the model
+        isSaved = input("Do you want to save the classifier? ")
+        if isSaved == "y":
+            saveModel(model, logor)
+        else:
+            print("Why don´t you like the classifier= :(")
     else:
-        model = loadModel(path_load)
+        model, logor = loadModel(path_load)
         print("Model loaded...")
     time.sleep(1)
     if len(queries) > 0:
@@ -44,7 +50,9 @@ if __name__ == "__main__":
         file1 = open(dataset_path, 'r') 
         documents = pd.Series(file1.readlines(), name="document").str.lower()
         for query in queries:
-            predict(query, model, documents, args.ranks, logor) 
+            predicted = predict(query, model, documents, args.ranks, logor) 
+            print("This is the ranking for query \""+query+"\".....................")
+            print(predicted)
         print("-------------------------------------------------------")
         print("Predictions finished...")
         print("#######################################################")

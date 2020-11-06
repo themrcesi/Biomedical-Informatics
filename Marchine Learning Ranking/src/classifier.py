@@ -12,6 +12,8 @@ import pandas as pd
 
 from dataset import load_dataset
 
+from joblib import dump, load
+
 def compute_rf(query):
     words = query.split(" ")
     rf = {}
@@ -61,8 +63,7 @@ def predict(query, clf, documents, ranks, logor):
     logodds = np.array(logodds).transpose()
     logodds = (logor + (logodds-logor).sum(axis = 1))
     order = np.flip(np.argsort(logodds))
-    print("This is the ranking for query \""+query+"\".....................")
-    print(documents.loc[order[:ranks]].values)
+    return documents.loc[order[:ranks]].values
     
 def create_model(model_path):
     #queries, queriesRF, documents, isRelevants = load_dataset(model_path)
@@ -73,7 +74,7 @@ def create_model(model_path):
     queries = ["glucose blood", "bilirubin plasma"]
     isRelevants = [pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant')]
     
-    clf = LogisticRegression(random_state=0)
+    clf = LogisticRegression()
     logors = []
     
     for i in range(len(queries)):
@@ -119,4 +120,12 @@ def create_model(model_path):
         # print("-----------------------------------------")
     
     return clf, np.sum(logors)/len(logors)
-        
+
+def saveModel(clf, logor):
+    dump(clf, 'classifier.joblib') 
+    dump(logor, "logor.joblib")
+    
+def loadModel(model_path):
+    model = load(model_path)
+    logor = load("logor.joblib")
+    return model, logor
