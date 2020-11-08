@@ -66,13 +66,13 @@ def predict(query, clf, documents, ranks, logor):
     return documents.loc[order[:ranks]].values
     
 def create_model(model_path):
-    #queries, queriesRF, documents, isRelevants = load_dataset(model_path)
+    queries, queriesRF, documents, isRelevants = load_dataset(model_path)
     
-    file1 = open(model_path, 'r') 
-    documents = pd.Series(file1.readlines(), name="document").str.lower()
-    queriesRF = [{"glucose":1/2, "blood":1/2}, {"bilirubin":1/2, "plasma":1/2}, {"white":1/4, "blood":1/4, "cells":1/4, "count":1/4}]
-    queries = ["glucose blood", "bilirubin plasma", "white blood cell counts"]
-    isRelevants = [pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant')]
+    # file1 = open(model_path, 'r') 
+    # documents = pd.Series(file1.readlines(), name="document").str.lower()
+    # queriesRF = [{"glucose":1/2, "blood":1/2}, {"bilirubin":1/2, "plasma":1/2}, {"white":1/4, "blood":1/4, "cells":1/4, "count":1/4}]
+    # queries = ["glucose blood", "bilirubin plasma", "white blood cell counts"]
+    # isRelevants = [pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant'), pd.Series([0 for i in range(67)], name='isRelevant')]
     
     clf = LogisticRegression()
     logors = []
@@ -83,14 +83,14 @@ def create_model(model_path):
         queryRF = queriesRF[i]
         isRelevant = isRelevants[i]
         
-        if i == 0:
-            isRelevant.loc[18] = 1
-            isRelevant.loc[23] = 1
-        elif i==1:
-            isRelevant.loc[4] = 1
-        elif i==2:
-            isRelevant.loc[14] = 1
-            isRelevant.loc[22] = 1
+        # if i == 0:
+        #     isRelevant.loc[18] = 1
+        #     isRelevant.loc[23] = 1
+        # elif i==1:
+        #     isRelevant.loc[4] = 1
+        # elif i==2:
+        #     isRelevant.loc[14] = 1
+        #     isRelevant.loc[22] = 1
         
         pr = isRelevant.sum() / len(isRelevant)
         logor = math.log(pr*(1-pr))
@@ -126,7 +126,7 @@ def saveModel(clf, logor):
     dump(clf, 'classifier.joblib') 
     dump(logor, "logor.joblib")
     
-def loadModel(model_path):
+def loadModel(model_path, logor_path):
     model = load(model_path)
-    logor = load("logor.joblib")
+    logor = load(logor_path)
     return model, logor

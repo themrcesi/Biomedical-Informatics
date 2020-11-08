@@ -1,4 +1,4 @@
-query,label_parsed,relevant_comp
+query,term,isRelevant
 glucose in blood,c reactive protein mass volume serum plasma,0
 glucose in blood,bicarbonate moles volume blood,0
 glucose in blood,rh type blood,0
