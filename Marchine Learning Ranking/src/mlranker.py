@@ -10,10 +10,10 @@ from classifier import loadModel, predict
 from dataset import load_dataset
 import pandas as pd
 
-query_column = [[sg.Text("Please, enter your query:"), sg.In(size=(25,1), enable_events = True, key = "-QUERY-"), sg.Button("Predict")], [sg.Text("Number of terms to show:"), sg.In(size=(2,1), enable_events = True, key = "-RANKS-")], [sg.Listbox(values = [], enable_events = True, size = (40,10), key ="-PREDICTIONS-")]]
+query_column = [[sg.Image(filename="..\img\loinc.png", pad = ((250,225), (10,10)))],[sg.Text("Please, enter your query:"), sg.In(size=(50,1), enable_events = True, key = "-QUERY-"), sg.Button("Predict", size= (25,1))], [sg.Text("Number of terms to show:"), sg.In(size=(2,1), enable_events = True, key = "-RANKS-")], [sg.Listbox(values = [], enable_events = True, size = (720,50), key ="-PREDICTIONS-")]]
 layout = [[sg.Column(query_column)]]
 
-window = sg.Window("Machine Learning Ranking: Staged Logistic Regression", layout)
+window = sg.Window("Machine Learning Ranking: Staged Logistic Regression", layout, size = (720,480), modal=True)
 
 dataset = None
 while(dataset is None):
