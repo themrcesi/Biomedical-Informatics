@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     args = load_args()
        
-    queries = args.queries
+    queries = args.queries if args.queries is not None else []
     dataset_path = args.dataset
     path_load = args.model
         
@@ -46,14 +46,13 @@ if __name__ == "__main__":
         print("Starting the predictions...")
         print("-------------------------------------------------------")
         time.sleep(2)
-        #_,_,documents,_ = load_dataset(dataset_path)
-        file1 = open(dataset_path, 'r') 
-        documents = pd.Series(file1.readlines(), name="document").str.lower()
+        _,_,documents,_ = load_dataset(dataset_path)
+        
         for query in queries:
             predicted = predict(query, model, documents, args.ranks, logor) 
             print("This is the ranking for query \""+query+"\".....................")
             print(predicted)
-        print("-------------------------------------------------------")
+            print("-------------------------------------------------------")
         print("Predictions finished...")
         print("#######################################################")
     
