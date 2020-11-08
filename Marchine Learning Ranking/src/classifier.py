@@ -79,7 +79,7 @@ def create_model(model_path):
         isRelevant = isRelevants[i]
         
         pr = isRelevant.sum() / len(isRelevant)
-        logor = math.log(pr*(1-pr))
+        logor = math.log(pr/(1-pr))
         logors.append(logor)
         
         tfidf_query = compute_tfidf(documents, queryRF)

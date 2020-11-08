@@ -1,11 +1,11 @@
-query,long_common_name,relevant_comp
+query,term,isRelevant
 glucose in blood,C reactive protein [Mass/volume] in Serum or Plasma,0
 glucose in blood,Bicarbonate [Moles/volume] in Blood,0
 glucose in blood,Rh [Type] in Blood,0
 glucose in blood,Trimethoprim+Sulfamethoxazole [Susceptibility],0
 glucose in blood,Bilirubin.total [Mass/volume] in Serum or Plasma,0
 glucose in blood,Blood group antibody screen [Presence] in Serum or Plasma,0
-glucose in blood,"Carbon dioxide, total [Moles/volume] in Blood",0
+glucose in blood,Carbon dioxide total [Moles/volume] in Blood,0
 glucose in blood,Ciprofloxacin [Susceptibility],0
 glucose in blood,Cortisol [Mass/volume] in Serum or Plasma,0
 glucose in blood,Chloride [Moles/volume] in Serum or Plasma,0
@@ -22,7 +22,7 @@ glucose in blood,Glucose [Moles/volume] in Pleural fluid,1
 glucose in blood,Cholesterol [Mass/volume] in Serum or Plasma,0
 glucose in blood,Bilirubin.direct [Mass/volume] in Serum or Plasma,0
 glucose in blood,Leukocytes [#/volume] in Blood,0
-glucose in blood,"Glucose [Mass/volume] in Serum, Plasma or Blood",1
+glucose in blood,Glucose [Mass/volume] in Serum Plasma or Blood,1
 glucose in blood,Body temperature,0
 glucose in blood,Blood product unit ID [#],0
 glucose in blood,Bilirubin.total [Mass/volume] in Synovial fluid,0
@@ -57,7 +57,7 @@ glucose in blood,Calcium.ionized [Moles/volume] in Serum or Plasma,0
 glucose in blood,Fasting glucose [Mass or Moles/volume] in Serum or Plasma,1
 glucose in blood,Cholesterol in HDL [Mass/volume] in Serum or Plasma,0
 glucose in blood,Albumin/Globulin [Mass ratio] in Serum or Plasma,0
-glucose in blood,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",0
+glucose in blood,Carbon dioxide total [Moles/volume] in Serum or Plasma,0
 glucose in blood,Bilirubin.indirect [Mass or Moles/volume] in Serum or Plasma,0
 glucose in blood,Levofloxacin [Susceptibility],0
 glucose in blood,Calcium [Mass/volume] in Serum or Plasma,0
@@ -72,7 +72,7 @@ bilirubin in plasma,Rh [Type] in Blood,0
 bilirubin in plasma,Trimethoprim+Sulfamethoxazole [Susceptibility],0
 bilirubin in plasma,Bilirubin.total [Mass/volume] in Serum or Plasma,1
 bilirubin in plasma,Blood group antibody screen [Presence] in Serum or Plasma,0
-bilirubin in plasma,"Carbon dioxide, total [Moles/volume] in Blood",0
+bilirubin in plasma,Carbon dioxide total [Moles/volume] in Blood,0
 bilirubin in plasma,Ciprofloxacin [Susceptibility],0
 bilirubin in plasma,Cortisol [Mass/volume] in Serum or Plasma,0
 bilirubin in plasma,Chloride [Moles/volume] in Serum or Plasma,0
@@ -89,7 +89,7 @@ bilirubin in plasma,Glucose [Moles/volume] in Pleural fluid,0
 bilirubin in plasma,Cholesterol [Mass/volume] in Serum or Plasma,0
 bilirubin in plasma,Bilirubin.direct [Mass/volume] in Serum or Plasma,1
 bilirubin in plasma,Leukocytes [#/volume] in Blood,0
-bilirubin in plasma,"Glucose [Mass/volume] in Serum, Plasma or Blood",0
+bilirubin in plasma,Glucose [Mass/volume] in Serum Plasma or Blood,0
 bilirubin in plasma,Body temperature,0
 bilirubin in plasma,Blood product unit ID [#],0
 bilirubin in plasma,Bilirubin.total [Mass/volume] in Synovial fluid,1
@@ -124,7 +124,7 @@ bilirubin in plasma,Calcium.ionized [Moles/volume] in Serum or Plasma,0
 bilirubin in plasma,Fasting glucose [Mass or Moles/volume] in Serum or Plasma,0
 bilirubin in plasma,Cholesterol in HDL [Mass/volume] in Serum or Plasma,0
 bilirubin in plasma,Albumin/Globulin [Mass ratio] in Serum or Plasma,0
-bilirubin in plasma,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",0
+bilirubin in plasma,Carbon dioxide total [Moles/volume] in Serum or Plasma,0
 bilirubin in plasma,Bilirubin.indirect [Mass or Moles/volume] in Serum or Plasma,1
 bilirubin in plasma,Levofloxacin [Susceptibility],0
 bilirubin in plasma,Calcium [Mass/volume] in Serum or Plasma,0
@@ -139,7 +139,7 @@ White blood cells count,Rh [Type] in Blood,0
 White blood cells count,Trimethoprim+Sulfamethoxazole [Susceptibility],0
 White blood cells count,Bilirubin.total [Mass/volume] in Serum or Plasma,0
 White blood cells count,Blood group antibody screen [Presence] in Serum or Plasma,0
-White blood cells count,"Carbon dioxide, total [Moles/volume] in Blood",0
+White blood cells count,Carbon dioxide total [Moles/volume] in Blood,0
 White blood cells count,Ciprofloxacin [Susceptibility],0
 White blood cells count,Cortisol [Mass/volume] in Serum or Plasma,0
 White blood cells count,Chloride [Moles/volume] in Serum or Plasma,0
@@ -156,7 +156,7 @@ White blood cells count,Glucose [Moles/volume] in Pleural fluid,0
 White blood cells count,Cholesterol [Mass/volume] in Serum or Plasma,0
 White blood cells count,Bilirubin.direct [Mass/volume] in Serum or Plasma,0
 White blood cells count,Leukocytes [#/volume] in Blood,1
-White blood cells count,"Glucose [Mass/volume] in Serum, Plasma or Blood",0
+White blood cells count,Glucose [Mass/volume] in Serum Plasma or Blood,0
 White blood cells count,Body temperature,0
 White blood cells count,Blood product unit ID [#],0
 White blood cells count,Bilirubin.total [Mass/volume] in Synovial fluid,0
@@ -191,7 +191,7 @@ White blood cells count,Calcium.ionized [Moles/volume] in Serum or Plasma,0
 White blood cells count,Fasting glucose [Mass or Moles/volume] in Serum or Plasma,0
 White blood cells count,Cholesterol in HDL [Mass/volume] in Serum or Plasma,0
 White blood cells count,Albumin/Globulin [Mass ratio] in Serum or Plasma,0
-White blood cells count,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",0
+White blood cells count,Carbon dioxide total [Moles/volume] in Serum or Plasma,0
 White blood cells count,Bilirubin.indirect [Mass or Moles/volume] in Serum or Plasma,0
 White blood cells count,Levofloxacin [Susceptibility],0
 White blood cells count,Calcium [Mass/volume] in Serum or Plasma,0

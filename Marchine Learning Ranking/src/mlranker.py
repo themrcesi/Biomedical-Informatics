@@ -10,7 +10,7 @@ from classifier import loadModel, predict
 from dataset import load_dataset
 import pandas as pd
 
-query_column = [[sg.Text("Please, enter your query:"), sg.In(size=(25,1), enable_events = True, key = "-QUERY-"), sg.Button("Predict")], [sg.Listbox(values = [], enable_events = True, size = (40,10), key ="-PREDICTIONS-")]]
+query_column = [[sg.Text("Please, enter your query:"), sg.In(size=(25,1), enable_events = True, key = "-QUERY-"), sg.Button("Predict")], [sg.Text("Number of terms to show:"), sg.In(size=(2,1), enable_events = True, key = "-RANKS-")], [sg.Listbox(values = [], enable_events = True, size = (40,10), key ="-PREDICTIONS-")]]
 layout = [[sg.Column(query_column)]]
 
 window = sg.Window("Machine Learning Ranking: Staged Logistic Regression", layout)
@@ -36,7 +36,7 @@ while True:
         break
     if event == "Predict":
         query = values["-QUERY-"]
-        predicted = predict(query, model, documents, 3, logor) 
+        predicted = predict(query, model, documents, int(values["-RANKS-"]), logor) 
         window["-PREDICTIONS-"].update(predicted)
         
 window.close()

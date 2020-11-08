@@ -47,7 +47,7 @@ if __name__ == "__main__":
         print("-------------------------------------------------------")
         time.sleep(2)
         _,_,documents,_ = load_dataset(dataset_path)
-)
+        
         for query in queries:
             predicted = predict(query, model, documents, args.ranks, logor) 
             print("This is the ranking for query \""+query+"\".....................")
