@@ -1,202 +1,202 @@
-query,term,isRelevant
-glucose in blood,c reactive protein mass volume serum plasma,0
-glucose in blood,bicarbonate moles volume blood,0
-glucose in blood,rh type blood,0
-glucose in blood,trimethoprim sulfamethoxazole susceptibility,0
-glucose in blood,bilirubin total mass volume serum plasma,0
-glucose in blood,blood group antibody screen presence serum plasma,0
-glucose in blood,carbon dioxide total moles volume blood,0
-glucose in blood,ciprofloxacin susceptibility,0
-glucose in blood,cortisol mass volume serum plasma,0
-glucose in blood,chloride moles volume serum plasma,0
-glucose in blood,protein c mass volume plasma,0
-glucose in blood,ampicillin susceptibility,0
-glucose in blood,glucose moles volume urine,1
-glucose in blood,amylase enzymatic activity volume serum plasma,0
-glucose in blood,lymphocytes volume blood,0
-glucose in blood,aspartate aminotransferase enzymatic activity volume serum plasma,0
-glucose in blood,methicillin resistant staphylococcus aureus presence unspecified specimen organism specific culture,0
-glucose in blood,blood product disposition type,0
-glucose in blood,glucose moles volume serum plasma,1
-glucose in blood,glucose moles volume pleural fluid,1
-glucose in blood,cholesterol mass volume serum plasma,0
-glucose in blood,bilirubin direct mass volume serum plasma,0
-glucose in blood,leukocytes volume blood,0
-glucose in blood,glucose mass volume serum plasma blood,1
-glucose in blood,body temperature,0
-glucose in blood,blood product unit id,0
-glucose in blood,bilirubin total mass volume synovial fluid,0
-glucose in blood,alanine aminotransferase enzymatic activity volume serum plasma,0
-glucose in blood,glucose moles volume serum plasma -- 3 hours post 100 g glucose po,0
-glucose in blood,calcium ionized moles volume blood,0
-glucose in blood,albumin mass volume serum plasma,0
-glucose in blood,indirect antiglobulin test complement specific reagent presence serum plasma,0
-glucose in blood,bilirubin indirect mass volume serum plasma,0
-glucose in blood,monocytes volume blood,0
-glucose in blood,ampicillin sulbactam susceptibility,0
-glucose in blood,abo & rh group type blood,0
-glucose in blood,major crossmatch interpretation,0
-glucose in blood,abo group type blood,0
-glucose in blood,cobalamin vitamin b12 mass volume serum,0
-glucose in blood,hematocrit volume fraction blood impedance,0
-glucose in blood,alkaline phosphatase enzymatic activity volume serum plasma,0
-glucose in blood,chloride moles volume blood,0
-glucose in blood,tyrosine aminotransferase mass volume plasma,0
-glucose in blood,c reactive protein mass volume serum plasma high sensitivity method,0
-glucose in blood,bilirubin total presence unspecified specimen,0
-glucose in blood,hepatitis b virus dna volume viral load serum probe signal amplification,0
-glucose in blood,choriogonadotropin beta subunit moles volume serum plasma,0
-glucose in blood,abo group type blood blood product unit,0
-glucose in blood,nitrofurantoin susceptibility,0
-glucose in blood,carcinoembryonic ag mass volume serum plasma,0
-glucose in blood,blood product type,0
-glucose in blood,vancomycin susceptibility,0
-glucose in blood,lymphocytes 100 leukocytes blood,0
-glucose in blood,choriogonadotropin units volume serum plasma,0
-glucose in blood,calcium ionized moles volume serum plasma,0
-glucose in blood,fasting glucose mass moles volume serum plasma,1
-glucose in blood,cholesterol hdl mass volume serum plasma,0
-glucose in blood,albumin globulin mass ratio serum plasma,0
-glucose in blood,carbon dioxide total moles volume serum plasma,0
-glucose in blood,bilirubin indirect mass moles volume serum plasma,0
-glucose in blood,levofloxacin susceptibility,0
-glucose in blood,calcium mass volume serum plasma,0
-glucose in blood,calcium bilirubinate total stone,0
-glucose in blood,cefazolin susceptibility,0
-glucose in blood,gentamicin susceptibility,0
-glucose in blood,calcium moles volume corrected albumin serum plasma,0
-glucose in blood,antibiotic susceptibility,0
-bilirubin in plasma,c reactive protein mass volume serum plasma,0
-bilirubin in plasma,bicarbonate moles volume blood,0
-bilirubin in plasma,rh type blood,0
-bilirubin in plasma,trimethoprim sulfamethoxazole susceptibility,0
-bilirubin in plasma,bilirubin total mass volume serum plasma,1
-bilirubin in plasma,blood group antibody screen presence serum plasma,0
-bilirubin in plasma,carbon dioxide total moles volume blood,0
-bilirubin in plasma,ciprofloxacin susceptibility,0
-bilirubin in plasma,cortisol mass volume serum plasma,0
-bilirubin in plasma,chloride moles volume serum plasma,0
-bilirubin in plasma,protein c mass volume plasma,0
-bilirubin in plasma,ampicillin susceptibility,0
-bilirubin in plasma,glucose moles volume urine,0
-bilirubin in plasma,amylase enzymatic activity volume serum plasma,0
-bilirubin in plasma,lymphocytes volume blood,0
-bilirubin in plasma,aspartate aminotransferase enzymatic activity volume serum plasma,0
-bilirubin in plasma,methicillin resistant staphylococcus aureus presence unspecified specimen organism specific culture,0
-bilirubin in plasma,blood product disposition type,0
-bilirubin in plasma,glucose moles volume serum plasma,0
-bilirubin in plasma,glucose moles volume pleural fluid,0
-bilirubin in plasma,cholesterol mass volume serum plasma,0
-bilirubin in plasma,bilirubin direct mass volume serum plasma,1
-bilirubin in plasma,leukocytes volume blood,0
-bilirubin in plasma,glucose mass volume serum plasma blood,0
-bilirubin in plasma,body temperature,0
-bilirubin in plasma,blood product unit id,0
-bilirubin in plasma,bilirubin total mass volume synovial fluid,1
-bilirubin in plasma,alanine aminotransferase enzymatic activity volume serum plasma,0
-bilirubin in plasma,glucose moles volume serum plasma -- 3 hours post 100 g glucose po,0
-bilirubin in plasma,calcium ionized moles volume blood,0
-bilirubin in plasma,albumin mass volume serum plasma,0
-bilirubin in plasma,indirect antiglobulin test complement specific reagent presence serum plasma,0
-bilirubin in plasma,bilirubin indirect mass volume serum plasma,1
-bilirubin in plasma,monocytes volume blood,0
-bilirubin in plasma,ampicillin sulbactam susceptibility,0
-bilirubin in plasma,abo & rh group type blood,0
-bilirubin in plasma,major crossmatch interpretation,0
-bilirubin in plasma,abo group type blood,0
-bilirubin in plasma,cobalamin vitamin b12 mass volume serum,0
-bilirubin in plasma,hematocrit volume fraction blood impedance,0
-bilirubin in plasma,alkaline phosphatase enzymatic activity volume serum plasma,0
-bilirubin in plasma,chloride moles volume blood,0
-bilirubin in plasma,tyrosine aminotransferase mass volume plasma,0
-bilirubin in plasma,c reactive protein mass volume serum plasma high sensitivity method,0
-bilirubin in plasma,bilirubin total presence unspecified specimen,0
-bilirubin in plasma,hepatitis b virus dna volume viral load serum probe signal amplification,0
-bilirubin in plasma,choriogonadotropin beta subunit moles volume serum plasma,0
-bilirubin in plasma,abo group type blood blood product unit,0
-bilirubin in plasma,nitrofurantoin susceptibility,0
-bilirubin in plasma,carcinoembryonic ag mass volume serum plasma,0
-bilirubin in plasma,blood product type,0
-bilirubin in plasma,vancomycin susceptibility,0
-bilirubin in plasma,lymphocytes 100 leukocytes blood,0
-bilirubin in plasma,choriogonadotropin units volume serum plasma,0
-bilirubin in plasma,calcium ionized moles volume serum plasma,0
-bilirubin in plasma,fasting glucose mass moles volume serum plasma,0
-bilirubin in plasma,cholesterol hdl mass volume serum plasma,0
-bilirubin in plasma,albumin globulin mass ratio serum plasma,0
-bilirubin in plasma,carbon dioxide total moles volume serum plasma,0
-bilirubin in plasma,bilirubin indirect mass moles volume serum plasma,1
-bilirubin in plasma,levofloxacin susceptibility,0
-bilirubin in plasma,calcium mass volume serum plasma,0
-bilirubin in plasma,calcium bilirubinate total stone,0
-bilirubin in plasma,cefazolin susceptibility,0
-bilirubin in plasma,gentamicin susceptibility,0
-bilirubin in plasma,calcium moles volume corrected albumin serum plasma,0
-bilirubin in plasma,antibiotic susceptibility,0
-White blood cells count,c reactive protein mass volume serum plasma,0
-White blood cells count,bicarbonate moles volume blood,0
-White blood cells count,rh type blood,0
-White blood cells count,trimethoprim sulfamethoxazole susceptibility,0
-White blood cells count,bilirubin total mass volume serum plasma,0
-White blood cells count,blood group antibody screen presence serum plasma,0
-White blood cells count,carbon dioxide total moles volume blood,0
-White blood cells count,ciprofloxacin susceptibility,0
-White blood cells count,cortisol mass volume serum plasma,0
-White blood cells count,chloride moles volume serum plasma,0
-White blood cells count,protein c mass volume plasma,0
-White blood cells count,ampicillin susceptibility,0
-White blood cells count,glucose moles volume urine,0
-White blood cells count,amylase enzymatic activity volume serum plasma,0
-White blood cells count,lymphocytes volume blood,0
-White blood cells count,aspartate aminotransferase enzymatic activity volume serum plasma,0
-White blood cells count,methicillin resistant staphylococcus aureus presence unspecified specimen organism specific culture,0
-White blood cells count,blood product disposition type,0
-White blood cells count,glucose moles volume serum plasma,0
-White blood cells count,glucose moles volume pleural fluid,0
-White blood cells count,cholesterol mass volume serum plasma,0
-White blood cells count,bilirubin direct mass volume serum plasma,0
-White blood cells count,leukocytes volume blood,1
-White blood cells count,glucose mass volume serum plasma blood,0
-White blood cells count,body temperature,0
-White blood cells count,blood product unit id,0
-White blood cells count,bilirubin total mass volume synovial fluid,0
-White blood cells count,alanine aminotransferase enzymatic activity volume serum plasma,0
-White blood cells count,glucose moles volume serum plasma -- 3 hours post 100 g glucose po,0
-White blood cells count,calcium ionized moles volume blood,0
-White blood cells count,albumin mass volume serum plasma,0
-White blood cells count,indirect antiglobulin test complement specific reagent presence serum plasma,0
-White blood cells count,bilirubin indirect mass volume serum plasma,0
-White blood cells count,monocytes volume blood,0
-White blood cells count,ampicillin sulbactam susceptibility,0
-White blood cells count,abo & rh group type blood,0
-White blood cells count,major crossmatch interpretation,0
-White blood cells count,abo group type blood,0
-White blood cells count,cobalamin vitamin b12 mass volume serum,0
-White blood cells count,hematocrit volume fraction blood impedance,0
-White blood cells count,alkaline phosphatase enzymatic activity volume serum plasma,0
-White blood cells count,chloride moles volume blood,0
-White blood cells count,tyrosine aminotransferase mass volume plasma,0
-White blood cells count,c reactive protein mass volume serum plasma high sensitivity method,0
-White blood cells count,bilirubin total presence unspecified specimen,0
-White blood cells count,hepatitis b virus dna volume viral load serum probe signal amplification,0
-White blood cells count,choriogonadotropin beta subunit moles volume serum plasma,0
-White blood cells count,abo group type blood blood product unit,0
-White blood cells count,nitrofurantoin susceptibility,0
-White blood cells count,carcinoembryonic ag mass volume serum plasma,0
-White blood cells count,blood product type,0
-White blood cells count,vancomycin susceptibility,0
-White blood cells count,lymphocytes 100 leukocytes blood,1
-White blood cells count,choriogonadotropin units volume serum plasma,0
-White blood cells count,calcium ionized moles volume serum plasma,0
-White blood cells count,fasting glucose mass moles volume serum plasma,0
-White blood cells count,cholesterol hdl mass volume serum plasma,0
-White blood cells count,albumin globulin mass ratio serum plasma,0
-White blood cells count,carbon dioxide total moles volume serum plasma,0
-White blood cells count,bilirubin indirect mass moles volume serum plasma,0
-White blood cells count,levofloxacin susceptibility,0
-White blood cells count,calcium mass volume serum plasma,0
-White blood cells count,calcium bilirubinate total stone,0
-White blood cells count,cefazolin susceptibility,0
-White blood cells count,gentamicin susceptibility,0
-White blood cells count,calcium moles volume corrected albumin serum plasma,0
-White blood cells count,antibiotic susceptibility,0
+query,long_common_name,relevant_comp
+glucose in blood,C reactive protein [Mass/volume] in Serum or Plasma,0
+glucose in blood,Bicarbonate [Moles/volume] in Blood,0
+glucose in blood,Rh [Type] in Blood,0
+glucose in blood,Trimethoprim+Sulfamethoxazole [Susceptibility],0
+glucose in blood,Bilirubin.total [Mass/volume] in Serum or Plasma,0
+glucose in blood,Blood group antibody screen [Presence] in Serum or Plasma,0
+glucose in blood,"Carbon dioxide, total [Moles/volume] in Blood",0
+glucose in blood,Ciprofloxacin [Susceptibility],0
+glucose in blood,Cortisol [Mass/volume] in Serum or Plasma,0
+glucose in blood,Chloride [Moles/volume] in Serum or Plasma,0
+glucose in blood,Protein C [Mass/volume] in Plasma,0
+glucose in blood,Ampicillin [Susceptibility],0
+glucose in blood,Glucose [Moles/volume] in Urine,1
+glucose in blood,Amylase [Enzymatic activity/volume] in Serum or Plasma,0
+glucose in blood,Lymphocytes [#/volume] in Blood,0
+glucose in blood,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,0
+glucose in blood,Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture,0
+glucose in blood,Blood product disposition [Type],0
+glucose in blood,Glucose [Moles/volume] in Serum or Plasma,1
+glucose in blood,Glucose [Moles/volume] in Pleural fluid,1
+glucose in blood,Cholesterol [Mass/volume] in Serum or Plasma,0
+glucose in blood,Bilirubin.direct [Mass/volume] in Serum or Plasma,0
+glucose in blood,Leukocytes [#/volume] in Blood,0
+glucose in blood,"Glucose [Mass/volume] in Serum, Plasma or Blood",1
+glucose in blood,Body temperature,0
+glucose in blood,Blood product unit ID [#],0
+glucose in blood,Bilirubin.total [Mass/volume] in Synovial fluid,0
+glucose in blood,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,0
+glucose in blood,Glucose [Moles/volume] in Serum or Plasma --3 hours post 100 g glucose PO,0
+glucose in blood,Calcium.ionized [Moles/volume] in Blood,0
+glucose in blood,Albumin [Mass/volume] in Serum or Plasma,0
+glucose in blood,Indirect antiglobulin test.complement specific reagent [Presence] in Serum or Plasma,0
+glucose in blood,Bilirubin.indirect [Mass/volume] in Serum or Plasma,0
+glucose in blood,Monocytes [#/volume] in Blood,0
+glucose in blood,Ampicillin+Sulbactam [Susceptibility],0
+glucose in blood,ABO & Rh group [Type] in Blood,0
+glucose in blood,Major crossmatch [interpretation],0
+glucose in blood,ABO group [Type] in Blood,0
+glucose in blood,Cobalamin (Vitamin B12) [Mass/volume] in Serum,0
+glucose in blood,Hematocrit [Volume Fraction] of Blood by Impedance,0
+glucose in blood,Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma,0
+glucose in blood,Chloride [Moles/volume] in Blood,0
+glucose in blood,Tyrosine aminotransferase [Mass/volume] in Plasma,0
+glucose in blood,C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method,0
+glucose in blood,Bilirubin.total [Presence] in Unspecified specimen,0
+glucose in blood,Hepatitis B virus DNA [#/volume] (viral load) in Serum by Probe with signal amplification,0
+glucose in blood,Choriogonadotropin.beta subunit [Moles/volume] in Serum or Plasma,0
+glucose in blood,ABO group [Type] in Blood from Blood product unit,0
+glucose in blood,Nitrofurantoin [Susceptibility],0
+glucose in blood,Carcinoembryonic Ag [Mass/volume] in Serum or Plasma,0
+glucose in blood,Blood product type,0
+glucose in blood,Vancomycin [Susceptibility],0
+glucose in blood,Lymphocytes/100 leukocytes in Blood,0
+glucose in blood,Choriogonadotropin [Units/volume] in Serum or Plasma,0
+glucose in blood,Calcium.ionized [Moles/volume] in Serum or Plasma,0
+glucose in blood,Fasting glucose [Mass or Moles/volume] in Serum or Plasma,1
+glucose in blood,Cholesterol in HDL [Mass/volume] in Serum or Plasma,0
+glucose in blood,Albumin/Globulin [Mass ratio] in Serum or Plasma,0
+glucose in blood,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",0
+glucose in blood,Bilirubin.indirect [Mass or Moles/volume] in Serum or Plasma,0
+glucose in blood,Levofloxacin [Susceptibility],0
+glucose in blood,Calcium [Mass/volume] in Serum or Plasma,0
+glucose in blood,Calcium bilirubinate/Total in Stone,0
+glucose in blood,Cefazolin [Susceptibility],0
+glucose in blood,Gentamicin [Susceptibility],0
+glucose in blood,Calcium [Moles/volume] corrected for albumin in Serum or Plasma,0
+glucose in blood,Other Antibiotic [Susceptibility],0
+bilirubin in plasma,C reactive protein [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Bicarbonate [Moles/volume] in Blood,0
+bilirubin in plasma,Rh [Type] in Blood,0
+bilirubin in plasma,Trimethoprim+Sulfamethoxazole [Susceptibility],0
+bilirubin in plasma,Bilirubin.total [Mass/volume] in Serum or Plasma,1
+bilirubin in plasma,Blood group antibody screen [Presence] in Serum or Plasma,0
+bilirubin in plasma,"Carbon dioxide, total [Moles/volume] in Blood",0
+bilirubin in plasma,Ciprofloxacin [Susceptibility],0
+bilirubin in plasma,Cortisol [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Chloride [Moles/volume] in Serum or Plasma,0
+bilirubin in plasma,Protein C [Mass/volume] in Plasma,0
+bilirubin in plasma,Ampicillin [Susceptibility],0
+bilirubin in plasma,Glucose [Moles/volume] in Urine,0
+bilirubin in plasma,Amylase [Enzymatic activity/volume] in Serum or Plasma,0
+bilirubin in plasma,Lymphocytes [#/volume] in Blood,0
+bilirubin in plasma,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,0
+bilirubin in plasma,Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture,0
+bilirubin in plasma,Blood product disposition [Type],0
+bilirubin in plasma,Glucose [Moles/volume] in Serum or Plasma,0
+bilirubin in plasma,Glucose [Moles/volume] in Pleural fluid,0
+bilirubin in plasma,Cholesterol [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Bilirubin.direct [Mass/volume] in Serum or Plasma,1
+bilirubin in plasma,Leukocytes [#/volume] in Blood,0
+bilirubin in plasma,"Glucose [Mass/volume] in Serum, Plasma or Blood",0
+bilirubin in plasma,Body temperature,0
+bilirubin in plasma,Blood product unit ID [#],0
+bilirubin in plasma,Bilirubin.total [Mass/volume] in Synovial fluid,1
+bilirubin in plasma,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,0
+bilirubin in plasma,Glucose [Moles/volume] in Serum or Plasma --3 hours post 100 g glucose PO,0
+bilirubin in plasma,Calcium.ionized [Moles/volume] in Blood,0
+bilirubin in plasma,Albumin [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Indirect antiglobulin test.complement specific reagent [Presence] in Serum or Plasma,0
+bilirubin in plasma,Bilirubin.indirect [Mass/volume] in Serum or Plasma,1
+bilirubin in plasma,Monocytes [#/volume] in Blood,0
+bilirubin in plasma,Ampicillin+Sulbactam [Susceptibility],0
+bilirubin in plasma,ABO & Rh group [Type] in Blood,0
+bilirubin in plasma,Major crossmatch [interpretation],0
+bilirubin in plasma,ABO group [Type] in Blood,0
+bilirubin in plasma,Cobalamin (Vitamin B12) [Mass/volume] in Serum,0
+bilirubin in plasma,Hematocrit [Volume Fraction] of Blood by Impedance,0
+bilirubin in plasma,Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma,0
+bilirubin in plasma,Chloride [Moles/volume] in Blood,0
+bilirubin in plasma,Tyrosine aminotransferase [Mass/volume] in Plasma,0
+bilirubin in plasma,C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method,0
+bilirubin in plasma,Bilirubin.total [Presence] in Unspecified specimen,0
+bilirubin in plasma,Hepatitis B virus DNA [#/volume] (viral load) in Serum by Probe with signal amplification,0
+bilirubin in plasma,Choriogonadotropin.beta subunit [Moles/volume] in Serum or Plasma,0
+bilirubin in plasma,ABO group [Type] in Blood from Blood product unit,0
+bilirubin in plasma,Nitrofurantoin [Susceptibility],0
+bilirubin in plasma,Carcinoembryonic Ag [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Blood product type,0
+bilirubin in plasma,Vancomycin [Susceptibility],0
+bilirubin in plasma,Lymphocytes/100 leukocytes in Blood,0
+bilirubin in plasma,Choriogonadotropin [Units/volume] in Serum or Plasma,0
+bilirubin in plasma,Calcium.ionized [Moles/volume] in Serum or Plasma,0
+bilirubin in plasma,Fasting glucose [Mass or Moles/volume] in Serum or Plasma,0
+bilirubin in plasma,Cholesterol in HDL [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Albumin/Globulin [Mass ratio] in Serum or Plasma,0
+bilirubin in plasma,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",0
+bilirubin in plasma,Bilirubin.indirect [Mass or Moles/volume] in Serum or Plasma,1
+bilirubin in plasma,Levofloxacin [Susceptibility],0
+bilirubin in plasma,Calcium [Mass/volume] in Serum or Plasma,0
+bilirubin in plasma,Calcium bilirubinate/Total in Stone,0
+bilirubin in plasma,Cefazolin [Susceptibility],0
+bilirubin in plasma,Gentamicin [Susceptibility],0
+bilirubin in plasma,Calcium [Moles/volume] corrected for albumin in Serum or Plasma,0
+bilirubin in plasma,Other Antibiotic [Susceptibility],0
+White blood cells count,C reactive protein [Mass/volume] in Serum or Plasma,0
+White blood cells count,Bicarbonate [Moles/volume] in Blood,0
+White blood cells count,Rh [Type] in Blood,0
+White blood cells count,Trimethoprim+Sulfamethoxazole [Susceptibility],0
+White blood cells count,Bilirubin.total [Mass/volume] in Serum or Plasma,0
+White blood cells count,Blood group antibody screen [Presence] in Serum or Plasma,0
+White blood cells count,"Carbon dioxide, total [Moles/volume] in Blood",0
+White blood cells count,Ciprofloxacin [Susceptibility],0
+White blood cells count,Cortisol [Mass/volume] in Serum or Plasma,0
+White blood cells count,Chloride [Moles/volume] in Serum or Plasma,0
+White blood cells count,Protein C [Mass/volume] in Plasma,0
+White blood cells count,Ampicillin [Susceptibility],0
+White blood cells count,Glucose [Moles/volume] in Urine,0
+White blood cells count,Amylase [Enzymatic activity/volume] in Serum or Plasma,0
+White blood cells count,Lymphocytes [#/volume] in Blood,0
+White blood cells count,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,0
+White blood cells count,Methicillin resistant Staphylococcus aureus [Presence] in Unspecified specimen by Organism specific culture,0
+White blood cells count,Blood product disposition [Type],0
+White blood cells count,Glucose [Moles/volume] in Serum or Plasma,0
+White blood cells count,Glucose [Moles/volume] in Pleural fluid,0
+White blood cells count,Cholesterol [Mass/volume] in Serum or Plasma,0
+White blood cells count,Bilirubin.direct [Mass/volume] in Serum or Plasma,0
+White blood cells count,Leukocytes [#/volume] in Blood,1
+White blood cells count,"Glucose [Mass/volume] in Serum, Plasma or Blood",0
+White blood cells count,Body temperature,0
+White blood cells count,Blood product unit ID [#],0
+White blood cells count,Bilirubin.total [Mass/volume] in Synovial fluid,0
+White blood cells count,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,0
+White blood cells count,Glucose [Moles/volume] in Serum or Plasma --3 hours post 100 g glucose PO,0
+White blood cells count,Calcium.ionized [Moles/volume] in Blood,0
+White blood cells count,Albumin [Mass/volume] in Serum or Plasma,0
+White blood cells count,Indirect antiglobulin test.complement specific reagent [Presence] in Serum or Plasma,0
+White blood cells count,Bilirubin.indirect [Mass/volume] in Serum or Plasma,0
+White blood cells count,Monocytes [#/volume] in Blood,0
+White blood cells count,Ampicillin+Sulbactam [Susceptibility],0
+White blood cells count,ABO & Rh group [Type] in Blood,0
+White blood cells count,Major crossmatch [interpretation],0
+White blood cells count,ABO group [Type] in Blood,0
+White blood cells count,Cobalamin (Vitamin B12) [Mass/volume] in Serum,0
+White blood cells count,Hematocrit [Volume Fraction] of Blood by Impedance,0
+White blood cells count,Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma,0
+White blood cells count,Chloride [Moles/volume] in Blood,0
+White blood cells count,Tyrosine aminotransferase [Mass/volume] in Plasma,0
+White blood cells count,C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method,0
+White blood cells count,Bilirubin.total [Presence] in Unspecified specimen,0
+White blood cells count,Hepatitis B virus DNA [#/volume] (viral load) in Serum by Probe with signal amplification,0
+White blood cells count,Choriogonadotropin.beta subunit [Moles/volume] in Serum or Plasma,0
+White blood cells count,ABO group [Type] in Blood from Blood product unit,0
+White blood cells count,Nitrofurantoin [Susceptibility],0
+White blood cells count,Carcinoembryonic Ag [Mass/volume] in Serum or Plasma,0
+White blood cells count,Blood product type,0
+White blood cells count,Vancomycin [Susceptibility],0
+White blood cells count,Lymphocytes/100 leukocytes in Blood,1
+White blood cells count,Choriogonadotropin [Units/volume] in Serum or Plasma,0
+White blood cells count,Calcium.ionized [Moles/volume] in Serum or Plasma,0
+White blood cells count,Fasting glucose [Mass or Moles/volume] in Serum or Plasma,0
+White blood cells count,Cholesterol in HDL [Mass/volume] in Serum or Plasma,0
+White blood cells count,Albumin/Globulin [Mass ratio] in Serum or Plasma,0
+White blood cells count,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",0
+White blood cells count,Bilirubin.indirect [Mass or Moles/volume] in Serum or Plasma,0
+White blood cells count,Levofloxacin [Susceptibility],0
+White blood cells count,Calcium [Mass/volume] in Serum or Plasma,0
+White blood cells count,Calcium bilirubinate/Total in Stone,0
+White blood cells count,Cefazolin [Susceptibility],0
+White blood cells count,Gentamicin [Susceptibility],0
+White blood cells count,Calcium [Moles/volume] corrected for albumin in Serum or Plasma,0
+White blood cells count,Other Antibiotic [Susceptibility],0
