@@ -70,12 +70,9 @@ Once the model has been created, you are able to execute the `mlranker.py` file.
    python mlranker.py
    ```
 1. First, you will be asked to load the dataset. 
-![path_dataset](img/path_dataset.PNG)
 > You can load either the `dataset_wide.csv` or `dataset_restrictive`.
 2. Secondly, you will need to load your `classifier.joblib` and `logor.joblib`.
-![path_model](img/path_model.PNG)
-![path_logor](img/path_logor.PNG)
-3. Now you are able to make predictions. Just write a query and choose the number of recommendations you want to be shown and click on Predict. And voilá, your recommendations will be shown.
+2. Now you are able to make predictions. Just write a query and choose the number of recommendations you want to be shown and click on Predict. And voilá, your recommendations will be shown.
     ![path_predictions](img/predictions.PNG)
 
 
