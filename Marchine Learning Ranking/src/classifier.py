@@ -76,7 +76,8 @@ def create_model(model_path):
     
     clf = LogisticRegression()
     logors = []
-    
+    X = pd.DataFrame()
+    Y = pd.DataFrame()
     for i in range(len(queries)):
     
         queryRF = queriesRF[i]
@@ -101,14 +102,14 @@ def create_model(model_path):
         logodds = []
         
         for a in queryRF:
-            tfidf_a = tfidf_query[a]
-            rf_a = rf[a]
+            tfidf_a = pd.Series(tfidf_query[a], name="tfidf")
+            rf_a = pd.Series(rf[a], name="rf")
             
-            X = pd.concat((rf_a, tfidf_a), axis = 1)
+            x = pd.concat((rf_a, tfidf_a), axis = 1)
             y = isRelevant
              
-             
-            clf.fit(X, y)
+            X = pd.concat((X,x), axis = 0)
+            Y = pd.concat((Y,y), axis = 0)
             # logods_a = clf.predict_log_proba(X)[:,1]
             # logodds.append(logods_a)
         
@@ -118,7 +119,7 @@ def create_model(model_path):
         # print("This is the ranking for query \""+queries[i]+"\".....................")
         # print(documents.loc[order[:3]].values)
         # print("-----------------------------------------")
-    
+    clf.fit(X, Y)
     return clf, np.sum(logors)/len(logors)
 
 def saveModel(clf, logor):
