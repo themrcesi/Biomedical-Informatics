@@ -4,7 +4,7 @@ In this directory you con find a machine learning ranker for the LOINC clinical 
 
 ## Application
 
-![Main app](img/app.png)
+![Main app](img/app.PNG)
 
 ## Dataset
 
@@ -21,7 +21,7 @@ This ranker consists of an implementation of a staged logistic algorithm, used f
 
 The algorithm computes the probability of being relevant of a term given a query as a combination of the probability of being relevant of the term and a linear combination of the partial probabilities of the term of being relevant given a specific word.
 
-![mlranking_prob](img/mlranking_probability.png)
+![mlranking_prob](img/mlranking_probability.PNG)
 
 In the above formula, we can see the terms explained in the previous paragraph:
 - Probability of being relevant of a term given some words: Log O(R|A1, A2, ..., An)
