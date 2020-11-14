@@ -55,6 +55,8 @@ Get into the `src` folder and run
    pip install -r requirements.txt
    ```
 
+> Please, notice that if you use LInux you must install tkinter by yourself.
+
 ### Creating the classifier
 
 Execute the file file `ranker.py` in order to generate the classifier.
