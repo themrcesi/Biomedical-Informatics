@@ -32,11 +32,11 @@ if __name__ == "__main__":
         model, logor = create_model(dataset_path)
         print("Model created...")
         # Ask the user to save the model
-        isSaved = input("Do you want to save the classifier? ")
+        isSaved = input("Do you want to save the model? ")
         if isSaved == "y":
             saveModel(model, logor)
         else:
-            print("Why don´t you like the classifier= :(")
+            print("Why don´t you like the model= :(")
     else:
         model, logor = loadModel(path_load)
         print("Model loaded...")
