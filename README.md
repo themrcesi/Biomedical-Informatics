@@ -4,7 +4,7 @@ In this repository you can find two assignments from the Biomedical Informatics 
 
 [The first one](https://github.com/themrcesi/Biomedical-Informatics/tree/main/Information%20Retrieval%20Engine), consisting of building an information retireval engine for the [CORD-19](https://github.com/allenai/cord19).
 
-[The second one](https://github.com/themrcesi/Biomedical-Informatics/tree/main/Marchine%20Learning%20Ranking), consisting of building a machine learning ranking for some [LOINC](https://loinc.org/) terms.
+[The second one](https://github.com/themrcesi/Biomedical-Informatics/tree/main/Machine%20Learning%20Ranking), consisting of building a machine learning ranking for some [LOINC](https://loinc.org/) terms.
 
 Check the links above for further info about the projects.
 
