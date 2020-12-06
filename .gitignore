@@ -1,2 +1,12 @@
 
 *.xlsx
+
+Information Retrieval Engine/src/docs.txt
+
+*.dict
+
+*.index
+
+*.mm
+
+*.sim
