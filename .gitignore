@@ -10,3 +10,5 @@ Information Retrieval Engine/src/docs.txt
 *.mm
 
 *.sim
+
+Information Retrieval Engine/src/dask-worker-space/
