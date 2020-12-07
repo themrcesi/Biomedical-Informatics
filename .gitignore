@@ -16,3 +16,5 @@ Information Retrieval Engine/src/dask-worker-space/
 *.npy
 
 *.wordvectors
+
+*.model
