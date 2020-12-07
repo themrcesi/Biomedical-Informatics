@@ -12,3 +12,7 @@ Information Retrieval Engine/src/docs.txt
 *.sim
 
 Information Retrieval Engine/src/dask-worker-space/
+
+*.npy
+
+*.wordvectors
