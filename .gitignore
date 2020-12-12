@@ -18,3 +18,7 @@ Information Retrieval Engine/src/dask-worker-space/
 *.wordvectors
 
 *.model
+
+*.lsi
+
+*.projection
